@@ -25,3 +25,9 @@ curl -X PUT -d https://docs.google.com/document/d/e/2PACX-1vQH5CGdu3xyAAgBv7RoCh
 curl -X PUT -d https://docs.google.com/document/d/e/2PACX-1vRoYhBv_Yn6RW-nPW_kchOfQnN_InQrKF3I6rCVvFqUOyjJ8JvW-mSx2jPvI-LsSD9-0IPQpqbD7O_k/pub http://localhost:8080/api/admin/settings/:NavbarAboutUrl
 
 ```
+
+### Atualizar a homepage
+
+```
+curl -X PUT -d '/var/www/dataverse/branding/custom-homepage.html' http://localhost:8080/api/admin/settings/:HomePageCustomizationFile
+```
